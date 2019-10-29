@@ -80,7 +80,7 @@ message ChangeDataRequest {
     uint64 region_id = 2;
     metapb.RegionEpoch region_epoch = 3;
 
-    int64 checkpoint_ts = 4;
+    uint64 checkpoint_ts = 4;
     bytes start_key = 5;
     bytes end_key = 6;
 }
