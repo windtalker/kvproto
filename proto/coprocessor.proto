@@ -59,6 +59,9 @@ message BatchRequest {
     int64 tp = 2;
     bytes data = 3;
     repeated RegionInfo regions = 4;
+    uint64 start_ts = 5;
+    // Any schema-ful storage to validate schema correctness if necessary.
+    int64 schema_ver = 6;
 }
 
 message RegionExecStatus {
